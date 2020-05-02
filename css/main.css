@@ -2568,7 +2568,7 @@ main.science {
 
 .slideshow__details {
 	max-width: 860px;
-	margin: auto;
+	margin:0 auto;
 	/* background-color: #f4f4f4; */
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -2578,7 +2578,7 @@ main.science {
 .hobby__container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 160px 325px 350px;
+	grid-template-rows: 155px 325px 350px;
 	grid-template-areas: "header header header header""sports hiking friends cooking""coding reading nature  travel";
 	gap: 10px;
 }
@@ -2598,14 +2598,6 @@ main.science {
 	color: var(--blue);
 }
 
-/* font-family: 'Indie Flower', cursive;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Sunflower', sans-serif;
-font-family: 'Dancing Script', cursive;
-font-family: 'EB Garamond', serif;
-font-family: 'Great Vibes', cursive;
-font-family: 'Noto Serif JP', serif;
-font-family: 'Nanum Myeongjo', serif; */
 .hobby__cards h2 {
 	text-align: center;
 	background-color: var(--brightgreen);
@@ -2617,7 +2609,6 @@ font-family: 'Nanum Myeongjo', serif; */
 	padding: 5px;
 	text-align: justify;
 	color: white;
-	/* background-color: #282e34; */
 	max-width: 100%;
 }
 
@@ -2630,7 +2621,7 @@ font-family: 'Nanum Myeongjo', serif; */
 	grid-area: header;
 	background-image: url('../images/undraw_sunlight.svg');
 	background-position: center;
-	background-size: 20rem 150px;
+	background-size: 20rem 155px;
 	background-repeat: no-repeat;
 	background-color: rgba(28, 87, 146, 0.9);
 }
