@@ -1,0 +1,20 @@
+{
+  "name": "Environment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "Christian Reutter",
+  "license": "ISC",
+  "homepage": "https://ChrisReutter.github.io/mywebsite",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "description": ""
+}
