@@ -3086,8 +3086,10 @@ h4 {
 	}
 
 	.civ__wrapper {
+		display: block;
 		font-size: 14px;
 		padding-bottom: 5px;
+		height: auto;
 	}
 
 	.civilization__container p {
@@ -3427,10 +3429,8 @@ div.imgBox a {
 
 .information {
 	grid-area: biodiv;
-	/* background-image: url(./img/biodiv.svg); */
 	object-fit: cover;
 	border: floralwhite 2px solid;
-	/* background-position: center; */
 }
 
 .information:hover {
@@ -3441,20 +3441,16 @@ div.imgBox a {
 	.gally {
 		display: flex;
 		flex-direction: column;
-		/* grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto; */
-		/* grid-template-areas:    "forrestimg forresttxt"
-                                "neobiotaimg neobiotatxt"
-                                "biodiv biodiv"
-                                "toximg toxtxt"
-                                "marineimg marinetxt"; */
 		height: auto;
 		justify-content: center;
 		align-content: center;
 	}
 
 	.bioloss {
-		z-index: -3;
+		font-size: 25px;
+		color: brown;
+		padding-top: 15px;
+		text-decoration: none;
 	}
 
 	.information:hover {
