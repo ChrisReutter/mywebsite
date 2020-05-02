@@ -206,7 +206,7 @@ blockquote {
 .video__item {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 /* video switch */
@@ -215,6 +215,11 @@ blockquote {
 }
 
 @media screen and (min-width: 768px) {
+	.video__item {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 	.video__switch-container {
 		display: block;
 		position: absolute;
@@ -330,7 +335,18 @@ blockquote {
 		transform: scale(1);
 	}
 }
-
+@media screen and (max-width:868px)
+{
+	.navBtn {
+		right:10%
+	}
+}
+@media screen and (max-width:568px)
+{
+	.navBtn {
+		right:20%
+	}
+}
 /* footer */
 footer {
 	background-color: #191716;
@@ -1689,6 +1705,10 @@ main.science {
 		font-weight: bold;
 		margin-bottom: 15px;
 	}
+	#science-header h1 {
+		font-size: 2rem;
+
+	}
 }
 
 @media only screen and (min-width: 300px) {
@@ -2126,6 +2146,15 @@ main.science {
 		padding-left: 15%;
 		padding-right: 5%;
 	}
+	.business__detail {
+	 font-size: 0.8rem;
+	 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+	}
+	.business__name h1 {
+		font-size: 20px;
+		line-height: 1.2;
+
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -2339,6 +2368,11 @@ main.science {
 	.qualities {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+	}
+	.card-text p,
+	.card-text ul {
+		font-size: 14px;
+		text-align: left;
 	}
 }
 
@@ -2636,7 +2670,7 @@ font-family: 'Nanum Myeongjo', serif; */
 /* Solutions */
 #ideas,
 #projects-ideas {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/robot.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/sheep_sJutzeler_Pixabay.jpg');
 	background-size: cover;
 	background-position: center;
 	font-size: 27px;
@@ -2650,13 +2684,8 @@ font-family: 'Nanum Myeongjo', serif; */
 	justify-content: center;
 	align-items: center;
 	padding: 0 20px;
-	/* padding to create space on smaller screens */
-	/* for aligning tutorial */
 }
 
-#projects-ideas {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/sheep_sJutzeler_Pixabay.jpg');
-}
 
 .solutions__ideas h1,
 h4 {
