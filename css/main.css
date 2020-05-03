@@ -1472,58 +1472,8 @@ aside > p {
 	justify-content: center;
 }
 
-.science__hydro {
-	grid-area: texthydro;
-	padding: 0 10%;
-	text-align: justify;
-	align-self: center;
-}
-
 .hydro__container img {
 	grid-area: water;
-	border-radius: 3em;
-	box-shadow: 0px 5px 5px 5px var(--black);
-}
-
-.earth__container {
-	display: grid;
-	grid-template-columns: repeat(2, 40%);
-	grid-template-areas: 'textearth earth';
-	justify-content: center;
-	padding-top: 2%;
-	padding-bottom: 2%;
-}
-
-.science__earth {
-	grid-area: textearth;
-	padding: 0 10%;
-	text-align: justify;
-	align-self: center;
-}
-
-.earth__container img {
-	padding-top: 10px;
-	grid-area: earth;
-	border-radius: 3em;
-	box-shadow: 0px 5px 5px 5px var(--black);
-}
-
-.bio__container {
-	display: grid;
-	grid-template-columns: repeat(2, 40%);
-	grid-template-areas: 'bio textbio';
-	justify-content: center;
-}
-
-.science__bio {
-	grid-area: textbio;
-	padding: 2% 10%;
-	text-align: justify;
-	align-self: center;
-}
-
-.bio__container img {
-	grid-area: bio;
 	border-radius: 3em;
 	box-shadow: 0px 5px 5px 5px var(--black);
 }
@@ -1557,18 +1507,7 @@ main.science {
 	box-sizing: border-box;
 }
 
-/* .intro-text{
-        width: 30%;
-        transition: all 0.5s ease-in-out;
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    .intro-appear{
-        opacity: 1;
-        transform: translateY(0px);
-    } */
 .earth__container img,
-.bio__container img,
 .hydro__container img {
 	width: 100%;
 }
@@ -1682,10 +1621,7 @@ main.science {
 @media screen and (max-width: 1200px) {
 	.biodiv__container,
 	.gis__container,
-	.citydev__container,
-	.hydro__container,
-	.earth__container,
-	.bio__container {
+	.citydev__container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -1693,9 +1629,6 @@ main.science {
 		margin: 1% 2%;
 	}
 
-	.science__hydro p,
-	.science__earth p,
-	.science__bio p,
 	.science__biodiv p,
 	.science__citydev p,
 	.science__gis p {
@@ -1704,9 +1637,6 @@ main.science {
 		font-size: 13px;
 	}
 
-	.science__hydro h2,
-	.science__earth h2,
-	.science__bio h2,
 	.science__biodiv h2,
 	.science__citydev h2,
 	.science__gis h2 {
@@ -1717,20 +1647,14 @@ main.science {
 
 	.biodiv__container img,
 	.gis__container img,
-	.citydev__container img,
-	.hydro__container img,
-	.earth__container img,
-	.bio__container img {
+	.citydev__container img {
 		margin-left: 10%;
 		max-width: 80%;
 	}
 
 	.biodiv__container button,
 	.gis__container button,
-	.citydev__container button,
-	.hydro__container button,
-	.earth__container button,
-	.bio__container button {
+	.citydev__container button {
 		font-size: 12px;
 		font-weight: bold;
 		margin-bottom: 15px;
@@ -3258,22 +3182,34 @@ div.imgBox a {
 	background-color: #f4f4f4;
 }
 
-.water__container {
+.water__container,
+.earth__container {
 	display: grid;
 	grid-template-columns: repeat(2, 45%);
 	gap: 10px;
 	justify-content: center;
+}
+.water__container {
 	align-items: flex-end;
 	padding: 15px;
 	background-color: rgba(103, 152, 180, 0.7);
 }
-
+.earth__container {
+	align-items: center;
+	padding: 25px;
+	background-color: #f4f4f4;
+}
+.earth__issues img,
 .water__issues img {
 	width: 100%;
 	object-fit: cover;
 	vertical-align: middle;
 	padding: 10px;
 	border-radius: 3em;
+}
+.earth__issues img {
+	box-shadow: 0px 5px 5px 5px var(--black);
+	padding: 0;
 }
 
 .water__container a {
@@ -3294,9 +3230,17 @@ div.imgBox a {
 	/* padding-top: 10px; */
 	text-align: center;
 }
+.intro-text {
+	padding: 20px;
+	text-align: justify;
+}
+.earth__issues h2 {
+	padding-left: 20px;
+}
 
 @media screen and (max-width: 1400px) {
-	.water__container {
+	.water__container,
+	.earth__container {
 		display: grid;
 		grid-template-columns: 1fr;
 	}
@@ -3326,6 +3270,28 @@ div.imgBox a {
 	}
 
 	.water__container .water__issues:nth-of-type(6) {
+		order: 6;
+	}
+}
+@media screen and (max-width: 1400px) {
+	.earth__issues h2 {
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.earth__container .earth__issues:nth-of-type(3) {
+		order: 4;
+	}
+
+	.earth__container .earth__issues:nth-of-type(4) {
+		order: 3;
+	}
+
+	.earth__container .earth__issues:nth-of-type(5) {
+		order: 5;
+	}
+
+	.earth__container .earth__issues:nth-of-type(6) {
 		order: 6;
 	}
 }
