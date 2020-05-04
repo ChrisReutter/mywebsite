@@ -3062,6 +3062,7 @@ div.imgBox a {
 }
 .biodiv__issues img:hover {
 	transform: scale(1.25);
+	z-index: 2;
 }
 .biodiv__issues {
 	position: relative;
