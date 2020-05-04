@@ -8,8 +8,8 @@ font-family: 'Noto Serif JP', serif;
 font-family: 'Nanum Myeongjo', serif;
 */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins|Dancing+Script|Fira+Sans|EB+Garamond|Great+Vibes|Indie+Flower|Noto+Serif+JP|Open+Sans|Sunflower:300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bevan|Kanit:400|Montserrat|Nanum+Myeongjo|Open+Sans:800&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Poppins|Dancing+Script|Fira+Sans|EB+Garamond|Great+Vibes|Indie+Flower|Noto+Serif+JP|Open+Sans|Sunflower:300&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Bevan|Kanit:400|Montserrat|Nanum+Myeongjo|Open+Sans:800&display=swap';
 
 :root {
 	--brightgreen: #a2d134;
@@ -546,25 +546,6 @@ footer {
 	border: 3px solid var(--yellow);
 	margin: 0 auto;
 }
-
-/* #filler-contact button{
-    position: absolute;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: var(--yellow);
-    border: 2px solid var(--yellow);
-    border-radius: 10px;
-    padding: 10px 15px;
-    background: transparent;
-    cursor: pointer;
-    transform: translateY(-50%);
-    text-align: center;
-    top: 70%;
-} */
-/* #filler-contact button:hover{
-    background: var(--yellow);
-    color: var(--black);
-} */
 
 #filler-contactformular {
 	background: linear-gradient(rgba(0, 0, 10, 0.5), rgba(0, 0, 10, 0.5)), url('../img/gardening.jpg');
@@ -1281,10 +1262,20 @@ aside > p {
 	aside {
 		width: 40%;
 	}
-}
+	aside h3 {
+		font-size: 12px;
+	}
+	#science__interdis {
+		font-size: 12px;
+	}
 
-#science__interdis p {
-	font-family: 'Fira Sans', sans-serif;
+	#science__interdis h1 {
+		font-size: 18px;
+	}
+
+	#science__interdis h2 {
+		font-size: 16px;
+	}
 }
 
 /* hover effect: text and image enlarged - only showing when hovering */
@@ -1461,6 +1452,9 @@ aside > p {
 
 		text-align: center;
 	}
+	#filler-thesis h1 {
+		font-size: 30px;
+	}
 }
 
 /* end of thesis sector */
@@ -1501,167 +1495,9 @@ main.science {
 	font-size: 2rem;
 }
 
-.wrap__mjSubjects {
-	/* margin: 2em 0; */
-	padding: 1em 0;
-	box-sizing: border-box;
-}
-
-.earth__container img,
-.hydro__container img {
-	width: 100%;
-}
-
-.biodiv__container img,
-.gis__container img,
-.citydev__container img {
-	width: 100%;
-}
-
-.gis__container img:hover {
-	transform: scale(1.5);
-}
-
-.science__biodiv button,
-.science__citydev button,
-.science__gis button {
-	padding: 10px 20px;
-	border-radius: 10px;
-	margin-top: 10%;
-	background: transparent;
-	border: var(--darkbrown) 1px solid;
-	/* font-weight: bolder; */
-	text-decoration: none;
-	border-radius: 1em;
-	font-size: 20px;
-	color: #333;
-	cursor: pointer;
-	text-align: center;
-}
-
-.science__biodiv button:hover,
-.science__citydev button:hover,
-.science__gis button:hover {
-	background-color: var(--darkbrown);
-	color: #f4f4f4;
-}
-
 /* Project Boxes */
-/* BioDiv */
-.biodiv__container,
-.gis__container,
-.citydev__container {
-	padding: 20px 0 20px 0;
-	text-align: justify;
-}
-
-.biodiv__container {
-	display: grid;
-	grid-template-columns: repeat(2, 35%);
-	grid-template-areas: 'biodiv textbiodiv';
-	justify-content: center;
-}
-
-.science__biodiv {
-	grid-area: textbiodiv;
-	padding: 0 5%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: start;
-	position: relative;
-}
-
-.bioimg {
-	grid-area: biodiv;
-	float: left;
-}
-
-/* GIS */
-.gis__container {
-	display: grid;
-	grid-template-columns: repeat(2, 35%);
-	grid-template-areas: 'gis textgis';
-	justify-content: center;
-}
-
-.science__gis {
-	grid-area: textgis;
-	padding: 0 5%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: start;
-	position: relative;
-}
-
-.gis__container img {
-	grid-area: gis;
-}
-
-/* City Development */
-.citydev__container {
-	display: grid;
-	grid-template-columns: repeat(2, 35%);
-	grid-template-areas: 'city textcity';
-	justify-content: center;
-}
-
-.science__citydev {
-	grid-area: textcity;
-	padding: 0 5%;
-	display: flex;
-	flex-wrap: wrap;
-
-	position: relative;
-}
-
-.citydev__container img {
-	grid-area: city;
-}
 
 @media screen and (max-width: 1200px) {
-	.biodiv__container,
-	.gis__container,
-	.citydev__container {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		flex-flow: column;
-		margin: 1% 2%;
-	}
-
-	.science__biodiv p,
-	.science__citydev p,
-	.science__gis p {
-		margin-bottom: 10px;
-		line-height: 1.2rem;
-		font-size: 13px;
-	}
-
-	.science__biodiv h2,
-	.science__citydev h2,
-	.science__gis h2 {
-		font-size: 16px;
-		margin-bottom: 5px;
-		text-align: center;
-	}
-
-	.biodiv__container img,
-	.gis__container img,
-	.citydev__container img {
-		margin-left: 10%;
-		max-width: 80%;
-	}
-
-	.biodiv__container button,
-	.gis__container button,
-	.citydev__container button {
-		font-size: 12px;
-		font-weight: bold;
-		margin-bottom: 15px;
-	}
-	#science-header h1 {
-		font-size: 2rem;
-	}
 }
 
 @media only screen and (min-width: 300px) {
@@ -3183,7 +3019,8 @@ div.imgBox a {
 }
 
 .water__container,
-.earth__container {
+.earth__container,
+.biodiv__container {
 	display: grid;
 	grid-template-columns: repeat(2, 45%);
 	gap: 10px;
@@ -3194,13 +3031,22 @@ div.imgBox a {
 	padding: 15px;
 	background-color: rgba(103, 152, 180, 0.7);
 }
-.earth__container {
+.earth__container,
+.biodiv__container {
 	align-items: center;
 	padding: 25px;
 	background-color: #f4f4f4;
 }
+.biodiv__container {
+	padding-left: 3rem;
+	padding: 20px 0 20px 0;
+	text-align: justify;
+	padding: 5% 5%;
+}
+
 .earth__issues img,
-.water__issues img {
+.water__issues img,
+.biodiv__issues img {
 	width: 100%;
 	object-fit: cover;
 	vertical-align: middle;
@@ -3211,7 +3057,15 @@ div.imgBox a {
 	box-shadow: 0px 5px 5px 5px var(--black);
 	padding: 0;
 }
-
+.biodiv__issues img {
+	border-radius: 0;
+}
+.biodiv__issues img:hover {
+	transform: scale(1.25);
+}
+.biodiv__issues {
+	position: relative;
+}
 .water__container a {
 	color: rgb(105, 32, 9);
 }
@@ -3234,8 +3088,30 @@ div.imgBox a {
 	padding: 20px;
 	text-align: justify;
 }
+.biodiv__text {
+	line-height: 1.75;
+	font-family: 'Montserrat', sans-serif, Georgia, 'Times New Roman', Times, serif;
+}
 .earth__issues h2 {
 	padding-left: 20px;
+}
+.biodiv__issues h2 {
+	padding-bottom: 10px;
+}
+.btn-bio {
+	padding: 10px 20px;
+	background: transparent;
+	border: 2px solid var(--darkbrown);
+	border-radius: 1em;
+	font-size: 20px;
+	color: #333;
+	cursor: pointer;
+	margin-top: 5%;
+}
+
+.btn-bio:hover {
+	background-color: var(--darkbrown);
+	color: #f4f4f4;
 }
 
 @media screen and (max-width: 1400px) {
@@ -3247,6 +3123,12 @@ div.imgBox a {
 
 	.water__issues p {
 		font-size: 14px;
+	}
+	.biodiv__text {
+		font-size: 12px;
+	}
+	.biodiv__issues h2 {
+		font-size: 16px;
 	}
 
 	.water__container .water__issues:nth-of-type(1) {
@@ -3295,7 +3177,28 @@ div.imgBox a {
 		order: 6;
 	}
 }
+@media screen and (max-width: 1400px) {
+	.biodiv__container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-flow: column;
+	}
+	#science-header h1 {
+		font-size: 26px;
+	}
 
+	.btn-bio {
+		font-size: 12px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.biodiv__text {
+		font-size: 10px;
+	}
+}
 /* Biology */
 .wrapper__biology {
 	padding: 0;
