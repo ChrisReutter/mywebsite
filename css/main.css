@@ -1868,7 +1868,7 @@ main.science {
 
 .business__name h1 {
 	font-size: 25px;
-	font-family: 'Nanum Myeongjo', sans-serif;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	text-align: center;
 	padding-top: 15px;
 }
@@ -1893,7 +1893,7 @@ main.science {
 	list-style-type: disc;
 	padding-top: 8px;
 	/* font-family: 'Noto Serif JP', sans-serif; */
-	font-family: 'Nanum Myeongjo', sans-serif;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .business__list {
@@ -1910,11 +1910,12 @@ main.science {
 	background: var(--green);
 	border: 2px solid #282e34;
 	border-radius: 1em;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: #f4f4f4;
 	cursor: pointer;
 	position: relative;
 	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 	/* text-decoration: none; */
 }
@@ -1931,16 +1932,19 @@ main.science {
 		grid-gap: 30px;
 		align-items: center;
 		justify-content: center;
-		padding-left: 15%;
+		padding-left: 5%;
 		padding-right: 5%;
 	}
 	.business__detail {
-		font-size: 0.8rem;
-		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-size: 0.9rem;
 	}
 	.business__name h1 {
 		font-size: 20px;
 		line-height: 1.2;
+	}
+	.business__name h2 {
+		font-size: 16px;
+		line-height: 1.3;
 	}
 }
 
@@ -1983,7 +1987,10 @@ main.science {
 		grid-gap: 30px;
 		align-items: center;
 		justify-content: center;
-		padding-left: 10%;
+		padding-left: 5%;
+	}
+	#filler-internship a {
+		margin-left: 35%;
 	}
 }
 
@@ -2648,7 +2655,8 @@ h4 {
 
 .text-1 .border.trans {
 	background-color: transparent;
-	color: floralwhite;
+	color: rgb(238, 238, 238);
+	text-shadow: #191716 3px 2px;
 	font-weight: bold;
 	font-size: 32px;
 }
@@ -2676,7 +2684,7 @@ h4 {
 	}
 
 	.text-1 {
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 
@@ -2982,6 +2990,7 @@ div.imgBox a {
 .earthscience__container .earth__cycle .env__details .env__content p {
 	padding: 10px 0 0;
 	margin: 0;
+	font-size: 0.8em;
 }
 
 @media screen and (max-width: 1400px) {
@@ -3032,6 +3041,23 @@ div.imgBox a {
 
 .environment.section-light.problems {
 	background-color: #f4f4f4;
+}
+
+@media screen and (max-width: 900px) {
+	.environment.section-light.problems h2 {
+		font-size: 26px;
+	}
+	.environment.section-light {
+		font-size: 18px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.environment.section-light h2 {
+		font-size: 26px;
+	}
+	.environment.section-light h3 {
+		font-size: 22px;
+	}
 }
 
 .water__container,
@@ -3401,6 +3427,8 @@ div.imgBox a {
 .top .content-body p {
 	padding-left: 12%;
 	text-align: justify;
+	font-size: 13px;
+	padding-top: 4px;
 }
 
 .bottom h1 {
