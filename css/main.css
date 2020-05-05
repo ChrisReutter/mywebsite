@@ -2813,7 +2813,7 @@ h4 {
 	color: #a9b2ac;
 	text-align: justify;
 	padding: 10px;
-	font-size: 1em;
+	font-size: 0.9em;
 	/* font-size: 16px; */
 }
 
@@ -2840,9 +2840,16 @@ h4 {
 
 @media screen and (max-width: 1000px) {
 	.civ__wrapper {
-		font-size: 15px;
+		font-size: 13px;
+		display: block;
+		height: 800px;
 	}
-
+	.civilization__container p {
+		color: whitesmoke;
+	}
+	.civilization__container h2 {
+		color: whitesmoke;
+	}
 	.civ__inner {
 		padding-top: 5%;
 	}
@@ -2867,7 +2874,6 @@ h4 {
 
 	.civilization__container p {
 		color: whitesmoke;
-		font-size: 14px;
 	}
 
 	.civilization__container h2 {
