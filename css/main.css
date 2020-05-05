@@ -39,7 +39,7 @@ a {
 	color: rgb(156, 74, 74);
 } */
 body {
-	font-family: 'Sunflower', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'Montserrat', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	/* background: linear-gradient(rgba(200, 199, 199, 0.85), rgba(200, 199, 199, 0.85)), url('../img/wood_bcg.jpg'); */
 	color: var(--black);
 	background-color: #f4f4f4;
@@ -2233,8 +2233,18 @@ main.science {
 	background-size: cover;
 	background-position: center;
 	width: 100%;
+	position: relative;
 }
-
+.img-h a {
+	position: absolute;
+	bottom: 10px;
+	left: 40%;
+}
+@media screen and (max-width: 1200px) {
+	.img-h a {
+		z-index: -5;
+	}
+}
 .workstyle {
 	background-color: rgba(49, 164, 255, .8);
 	border-bottom-right-radius: 12px;
@@ -3261,7 +3271,7 @@ div.imgBox a {
 
 .deforresttxt {
 	grid-area: forresttxt;
-	font-size: 15px;
+	font-size: 13px;
 }
 
 .neobiotaimg {
@@ -3273,12 +3283,12 @@ div.imgBox a {
 
 .neobiotatxt {
 	grid-area: neobiotatxt;
-	font-size: 15px;
+	font-size: 13px;
 }
 
 .ecotoxtxt {
 	grid-area: toxtxt;
-	font-size: 15px;
+	font-size: 13px;
 }
 
 .ecotoximg {
@@ -3290,7 +3300,7 @@ div.imgBox a {
 
 .marinetxt {
 	grid-area: marinetxt;
-	font-size: 15px;
+	font-size: 13px;
 }
 
 .marineimg {
@@ -3389,6 +3399,7 @@ div.imgBox a {
 
 .bottom h1 {
 	color: #fdab00;
+	padding-left: 25px;
 }
 
 .top {
@@ -3438,6 +3449,11 @@ div.imgBox a {
 		font-size: 55%;
 		padding-bottom: 20px;
 	}
+}
+.mnSubjects-item a {
+	position: absolute;
+	bottom: 10px;
+	margin-left: 40%;
 }
 
 @media only screen and (min-width: 650px) {
