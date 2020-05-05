@@ -340,7 +340,7 @@ blockquote {
 }
 @media screen and (max-width: 868px) {
 	.navBtn {
-		right: 14%;
+		right: 16%;
 	}
 }
 /* @media screen and (max-width:568px)
@@ -764,6 +764,10 @@ form .submit:hover {
 }
 
 @media screen and (min-width: 776px) {
+	.back-text,
+	.front-text {
+		font-size: 0.8em;
+	}
 	.services-container {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -3531,5 +3535,10 @@ div.imgBox a {
 		to {
 			transform: translateY(20px);
 		}
+	}
+}
+@media screen and (max-width: 868px) {
+	body {
+		width: 100%;
 	}
 }
