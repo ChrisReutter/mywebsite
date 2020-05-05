@@ -340,7 +340,7 @@ blockquote {
 }
 @media screen and (max-width: 868px) {
 	.navBtn {
-		right: 10%;
+		right: 14%;
 	}
 }
 /* @media screen and (max-width:568px)
@@ -3052,6 +3052,10 @@ div.imgBox a {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	.environment.section-light h1 {
+		font-size: 22px;
+	}
+
 	.environment.section-light h2 {
 		font-size: 26px;
 	}
@@ -3482,6 +3486,20 @@ div.imgBox a {
 	.skewed {
 		font-size: 55%;
 		padding-bottom: 20px;
+	}
+	.bottom .content-body p,
+	.top .content-body p {
+		font-size: 8px;
+	}
+	.bottom .content-body p {
+		padding-left: 15%;
+	}
+
+	.layer h1,
+	.bottom h1 {
+		font-size: 1.1em;
+		text-align: left;
+		padding-left: 20px;
 	}
 }
 .mnSubjects-item a {
