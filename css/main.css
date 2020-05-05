@@ -744,6 +744,13 @@ form .submit:hover {
 	color: var(--black);
 }
 
+@media screen and (max-width: 776px) {
+	.back-text p,
+	.front-text p {
+		font-size: 0.75em;
+	}
+}
+
 .service-item-white button {
 	background: var(--yellow);
 	color: #191716;
@@ -764,10 +771,6 @@ form .submit:hover {
 }
 
 @media screen and (min-width: 776px) {
-	.back-text,
-	.front-text {
-		font-size: 0.8em;
-	}
 	.services-container {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -3539,6 +3542,6 @@ div.imgBox a {
 }
 @media screen and (max-width: 868px) {
 	body {
-		width: 100%;
+		max-width: auto;
 	}
 }
