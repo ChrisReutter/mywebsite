@@ -3,7 +3,7 @@ $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $message =$_POST['message'];
 
-$email_from ='christian.reutter@yahoo.com';
+$email_from ='yourname@yourwebsite.com';
 // Website E-Mail - erst nach Domain Registrierung
 $email_subject = "New Form Submission";
 $email_body = "User Name: $name.\n".
@@ -31,6 +31,6 @@ if ($response->success)
 else
 {
     echo "Nachricht nicht versandt";
-};
+}
 
 ?>
