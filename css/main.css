@@ -56,33 +56,6 @@ blockquote {
 	font-family: 'Dancing Script', cursive;
 }
 
-/* section padding */
-.section-padding {
-	padding: 1rem 0;
-	background-color: rgba(255, 255, 245, .9);
-	opacity: 0.9;
-}
-
-/* grid container - fr gibt Größenverhältnis zwischen verschiedenen Bildern an */
-.grid-container {
-	max-width: 90vw;
-	margin: 2rem auto;
-	display: grid;
-	row-gap: 2rem;
-}
-
-@media screen and (min-width: 1200px) {
-	.grid-container--medium-2 {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 2rem;
-	}
-
-	.grid-container {
-		max-width: 85vw;
-	}
-}
-
 /* section title  */
 
 .section-title {
@@ -98,23 +71,6 @@ blockquote {
 	font-size: 3rem;
 	text-transform: capitalize;
 	color: #333;
-}
-
-.section-title__underline {
-	background: var(--yellow);
-	width: 5rem;
-	height: 0.25rem;
-}
-
-.section-title__text {
-	letter-spacing: 0.1rem;
-	line-height: 1.7;
-	margin-top: 1rem;
-	color: #333;
-	font-family: 'Sunflower', sans-serif;
-	font-size: 1.1rem;
-	padding: 1rem 1rem;
-	/* grid-auto-rows: minmax(100px, auto); Anywhere used?*/
 }
 
 /* end global styles */
@@ -1731,20 +1687,13 @@ main.science {
 
 .university-title__text {
 	letter-spacing: 0.1rem;
-	line-height: 1.7;
+	line-height: 1.5;
 	margin-top: 1rem;
 	color: #333;
 	font-family: 'Sunflower', sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	padding: 1rem 1rem;
 	text-align: justify;
-}
-
-.about__img-item {
-	width: 100%;
-	display: block;
-	height: 100%;
-	border-radius: 0.25rem;
 }
 
 .btn-uni {
@@ -1764,10 +1713,6 @@ main.science {
 }
 
 @media screen and (min-width: 768px) {
-	.about__img-special {
-		order: -1;
-	}
-
 	.about__university {
 		grid-template-rows: 1fr 1fr;
 	}
@@ -1959,6 +1904,7 @@ main.science {
 	.btn-uni {
 		font-size: 15px;
 		font-weight: bold;
+		margin-left: 25%;
 	}
 
 	.university-title__name {
@@ -3073,7 +3019,8 @@ div.imgBox a {
 
 .water__container,
 .earth__container,
-.biodiv__container {
+.biodiv__container,
+.grid-container {
 	display: grid;
 	grid-template-columns: repeat(2, 45%);
 	gap: 10px;
@@ -3096,10 +3043,14 @@ div.imgBox a {
 	text-align: justify;
 	padding: 5% 5%;
 }
+.grid-container {
+	margin: 2rem 0 2rem 0;
+}
 
 .earth__issues img,
 .water__issues img,
-.biodiv__issues img {
+.biodiv__issues img,
+.section-title img {
 	width: 100%;
 	object-fit: cover;
 	vertical-align: middle;
@@ -3167,10 +3118,16 @@ div.imgBox a {
 	background-color: var(--darkbrown);
 	color: #f4f4f4;
 }
+.section-title__underline {
+	background: var(--yellow);
+	width: 10rem;
+	height: 0.25rem;
+}
 
 @media screen and (max-width: 1400px) {
 	.water__container,
-	.earth__container {
+	.earth__container,
+	.grid-container {
 		display: grid;
 		grid-template-columns: 1fr;
 	}
@@ -3207,6 +3164,22 @@ div.imgBox a {
 
 	.water__container .water__issues:nth-of-type(6) {
 		order: 6;
+	}
+
+	.section-title:nth-of-type(1) {
+		order: 1;
+	}
+
+	.section-title:nth-of-type(2) {
+		order: 2;
+	}
+
+	.section-title:nth-of-type(3) {
+		order: 4;
+	}
+
+	.section-title:nth-of-type(4) {
+		order: 3;
 	}
 }
 @media screen and (max-width: 1400px) {
@@ -3251,6 +3224,9 @@ div.imgBox a {
 @media screen and (max-width: 768px) {
 	.biodiv__text {
 		font-size: 10px;
+	}
+	.section-title__underline {
+		transform: translate(50%, 50%);
 	}
 }
 /* Biology */
