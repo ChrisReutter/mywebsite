@@ -13,7 +13,7 @@ $to ="christian.reutter@yahoo.com";
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 
-$secretKey = "6LcdP-UUAAAAAJ-ypFP4hB5aCOkkQ9bOgXlhbvsa";
+$secretKey = "6LeNgPMUAAAAAPK8TfodWWI0KwssVPMiutk1YlCd";
 $responseKey = $_POST['g-recaptcha-response'];
 $UserIP = $_SERVER['REMOTE_ADDR'];
 $url = "https://www.google.com/recaptcha/api/siteverify?secret="$secretKey&response=$responseKey&remoteip=$UserIP";
