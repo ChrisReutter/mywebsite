@@ -589,6 +589,7 @@ form .submit:hover {
 }
 
 @media screen and (max-width: 1000px) {
+
 	article.skills-item h1,
 	div.title-text h1 {
 		font-size: 35px;
@@ -614,6 +615,7 @@ form .submit:hover {
 }
 
 @media screen and (max-width: 500px) {
+
 	article.skills-item h1,
 	div.title-text h1 {
 		font-size: 25px;
@@ -711,6 +713,7 @@ form .submit:hover {
 }
 
 @media screen and (max-width: 776px) {
+
 	.back-text p,
 	.front-text p {
 		font-size: 0.75em;
@@ -868,7 +871,7 @@ form .submit:hover {
 	gap: 2rem;
 }
 
-.environment-title > div {
+.environment-title>div {
 	border: #333 1px solid;
 }
 
@@ -1228,7 +1231,7 @@ aside {
 	color: #29627e;
 }
 
-aside > p {
+aside>p {
 	margin: .5rem;
 }
 
@@ -1474,10 +1477,10 @@ main.science {
 
 /* Project Boxes */
 
-@media screen and (max-width: 1200px) {
-}
+@media screen and (max-width: 1200px) {}
 
 @media only screen and (min-width: 300px) {
+
 	.blue-container ul li p,
 	blockquote {
 		font-size: 15px;
@@ -1921,7 +1924,7 @@ main.science {
 	.btn-uni {
 		font-size: 15px;
 		font-weight: bold;
-		margin-left: 25%;
+		margin-left: 35%;
 	}
 
 	.university-title__name {
@@ -2638,6 +2641,7 @@ h4 {
 }
 
 @media (max-width: 568px) {
+
 	.img-1,
 	.img-2,
 	.img-3,
@@ -3169,6 +3173,7 @@ div.imgBox a {
 }
 
 @media screen and (max-width: 1400px) {
+
 	.water__container,
 	.earth__container,
 	.grid-container {
