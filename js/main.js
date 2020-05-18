@@ -1,25 +1,49 @@
-const current = document.querySelector('#current');
-const imgs = document.querySelectorAll('.imgs img');
-const opacity = 0.6;
-
-// Set first img opacity
-imgs[0].style.opacity = opacity;
-
-imgs.forEach(img => img.addEventListener('click', imgClick));
-
-function imgClick(e) {
-    // Reset the opacity
-imgs.forEach(img => (img.style.opacity = 1));
-    // Change current image to src of clicked image
-current.src = e.target.src;
-
-// Add fade in class
-current.classList.add('fade-in');
-
-// Remove fade-in class after .5 seconds
-setTimeout(() => current.classList.remove('fade-in'),500);
-// Change the opacity to opacity var
-e.target.style.opacity = opacity;
+class UI {
+    hidePreloader() {
+        document.querySelector('.preloader').style.display = "none";
+    }
+    showNav() {
+        document.querySelector('.nav').classList.toggle('nav--show');
+    }
 }
 
-// const [current, imgs] = [document.querySelector('#current'), document.querySelectorAll('.imgs img')]
+eventListeners();
+
+function eventListeners() {
+    const ui = new UI()
+    window.addEventListener('load', () => ui.hidePreloader());
+    document.querySelector('.navBtn').addEventListener('click', () => ui.showNav());
+    // document.querySelector('.video__switch').addEventListener('click', () => ui.videoControls());
+}
+
+// Lazy Images
+
+const images = document.querySelectorAll('[data-src]');
+
+function preloadImage(img) {
+    const src = img.getAttribute('data-src');
+    if (!src) {
+        return;
+    }
+    img.src = src;
+}
+
+const imgOptions = {
+    threshold: 0,
+    rootMargin: '0px 0px 200px 0px'
+};
+
+const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            preloadImage(entry.target);
+            imgObserver.unobserve(entry.target);
+        }
+    });
+}, imgOptions);
+
+images.forEach((image) => {
+    imgObserver.observe(image);
+});
